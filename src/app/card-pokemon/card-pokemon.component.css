@@ -1,0 +1,12 @@
+.card-pokemon-container {
+  border: 1px solid rgb(253,201,55);
+  background-color: rgb(253,201,55);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: rgb(57,99,166);
+}
+
+.card-pokemon-container span {
+  text-transform: capitalize;
+}

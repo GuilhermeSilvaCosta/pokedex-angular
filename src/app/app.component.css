@@ -1,0 +1,42 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.app-container .actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.app-container .actions input {
+  margin: 0 8px;
+}
+
+.app-container .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+@media(max-width: 890px) {
+  .app-container {
+    margin: 0 8px;
+  }
+
+  .app-container .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .app-container .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 500px) {
+  .app-container .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
