@@ -1,7 +1,10 @@
 <div class="app-container">
+  <div class="actions-mobile">
+    <input [ngModel]="search" (ngModelChange)="changeSearch($event)" type="text" class="form-control search-input" placeholder="Buscar pokemon" >
+  </div>
   <div class="actions">
     <button (click)="previousPage()" [disabled]="offset === 0" type="button" class="btn btn-primary">Anterior</button>
-    <input [ngModel]="search" (ngModelChange)="changeSearch($event)" type="text" class="form-control" placeholder="Buscar pokemon" >
+    <input [ngModel]="search" (ngModelChange)="changeSearch($event)" type="text" class="form-control search-input" placeholder="Buscar pokemon" >
     <button (click)="nextPage()" type="button" class="btn btn-primary" [disabled]="disableNext">Proximo</button>
   </div>
   <div class="content">

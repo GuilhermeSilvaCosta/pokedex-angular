@@ -10,3 +10,9 @@
 .card-pokemon-container span {
   text-transform: capitalize;
 }
+
+@media(max-width: 600px) {
+  .card-pokemon-container span {
+    font-size: 24px;
+  }
+}

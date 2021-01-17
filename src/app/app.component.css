@@ -19,6 +19,11 @@
   gap: 8px;
 }
 
+.app-container .actions-mobile {
+  display: none;
+  padding: 8px 0px;
+}
+
 @media(max-width: 890px) {
   .app-container {
     margin: 0 8px;
@@ -38,5 +43,19 @@
 @media(max-width: 500px) {
   .app-container .content {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app-container .actions button,
+  .app-container .actions input, 
+  .app-container .actions-mobile input {
+    font-size: 24px;
+  }
+
+  .app-container .actions .search-input {
+    display: none;
+  }
+
+  .app-container .actions-mobile {
+    display: initial;
   }
 }
